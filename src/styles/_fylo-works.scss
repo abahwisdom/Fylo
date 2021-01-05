@@ -1,0 +1,98 @@
+.fylo-works-contain {
+    background: #19202b;
+    text-align: center;
+    padding: 3rem 20px 11rem;
+    display: flex;
+    flex-flow: row wrap;
+
+    img {
+        height: auto;
+        width: 100%;
+        max-width: 630px;
+        margin: auto;
+    }
+
+    .content {
+        text-align: left;
+        max-width: 545px;
+        margin: auto;
+
+        @media screen and (max-width: 1200px) {
+            margin-top: 3rem;; 
+         }
+    }
+
+    h2 {
+        max-width: 30rem;
+        font-family: $rale;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+        @media screen and (min-width: 799px) {
+           font-size: 1rem; 
+        }
+        
+    }
+}
+
+
+.work-link {
+    color: hsl(176, 68%, 64%);
+    position: relative;
+    display: inline-block;
+    margin: 0 0 1.5rem;
+    padding: 0 2rem 0 0;
+    font-size: .75rem;
+
+    :hover{
+        text-decoration: none;
+        color: white;
+    }
+
+    &:hover{
+        & .after-work{
+        background-color: white;
+    }
+
+    & .arrow-work{
+        color:white
+    }
+    } 
+}
+
+
+
+.after-work {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: -.3rem;
+    background-color: hsl(176, 68%, 64%);
+
+
+}
+
+.arrow-work {
+    position: absolute;
+    right: 0;
+    top:1px;
+    font-size: 15px;
+    color: hsl(176, 68%, 64%) ;
+}
+
+
+
+
+
+
+
+
+
+
+
+

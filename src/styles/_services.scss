@@ -1,0 +1,38 @@
+.services-contain{
+    background: #19202b;
+    padding-top: 230px;
+    
+    .services{
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 870px;
+        margin: auto;
+    
+
+        .service {
+            max-width: 360px;
+            padding: 3rem 1rem;
+            margin: auto;
+            text-align: center;
+
+            h4{
+                font-size: 18px;
+                font-family: $rale;
+                font-weight:700 ;
+                padding: 25px 0 5px;;;
+            };
+
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+
+        padding-top: 0;
+
+}
+}

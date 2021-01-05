@@ -1,0 +1,97 @@
+.subscription-container {
+    background: #181f2a;
+    padding: 12rem 2rem 7rem;
+
+    .subscribe {
+        text-align: center;
+        background: #1c2431;
+        padding: 1.8rem;
+        height: 21rem;
+        border-radius: 0.5rem;
+        position: relative;
+        z-index: 1;
+        max-width: 50rem;
+        margin: auto;
+        margin-bottom: -18rem;
+        -webkit-box-shadow: 0rem 0.5rem 0.5rem 0rem #08101b;
+                box-shadow: 0rem 0.5rem 0.5rem 0rem #08101b;
+
+          
+        h2 {
+            margin-bottom: 1.5rem;
+            font-size: 18px;
+            font-family: $rale;
+            font-weight: 700;
+
+            @media (min-width: 1023px){
+                font-size: 2rem;
+             }
+        }
+
+        p {
+          font-size: clamp(13px, 2vw, 15px);
+          }
+
+        form{
+            @media (min-width: 1023px){
+               display: flex;
+               justify-content: space-evenly;
+               width: 100%;
+            }
+        }
+
+        input {
+            width: 100%;
+            height: 3rem;
+            margin: 20px 0;
+            border: none;
+            border-radius: 2.5rem;
+            padding-left: 3rem;
+            color: #000;
+            font-size: 16px;
+
+            @media (min-width: 1023px){
+                width: 60%;
+            }
+
+            &:-ms-input-placeholder, &:-webkit-input-placeholder, &::placeholder {
+                font-size: 1rem;
+                color: #c5c5c5;
+              }
+
+        }
+
+        button {
+            width: 100%;
+            height: 3rem;
+            border: none;
+            border-radius: 2.5rem;
+            font-family: $rale;
+            font-weight: 700;
+            font-size: 16px;
+
+            @media (min-width: 1023px){
+                width: 30%;
+                margin: 20px 0;
+            }
+          }
+      }
+    
+  }
+  
+
+  
+  
+//   .subscription-container .subscribe button:hover, .subscription-container .subscribe button:focus {
+//     cursor: pointer;
+//     background: linear-gradient(74deg, #89dbe1, #8bd9e5);
+//   }
+  
+.err p {
+    display: block;
+    text-align: initial;
+    color: #ff4242;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-top: 0rem;
+  }

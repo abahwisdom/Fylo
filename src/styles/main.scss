@@ -1,0 +1,88 @@
+@import './variables';
+
+.contain-all{
+    font-family: $sans
+}
+
+.nav-section{
+    padding: 4% 5%;
+    background-color: hsl(217, 28%, 15%);
+}
+
+.nav-logo{
+    max-width: 20vw;
+    min-width: 5rem;
+    width: 70%;
+}
+
+.get-started-section{
+    position: relative;
+    // background: linear-gradient(#1c2431 86vw, #181f2a 60%);
+    // margin-bottom: -15rem;
+
+
+    .curve{
+        position: absolute;
+        width: 100%;
+        // height: 25%;
+        // top: calc(min(537px, 53vw));
+        bottom: 0;
+        z-index: 1;
+        height: calc(min(34vw, 380px));
+    }
+}
+
+
+
+.intro-image{
+    width:75%;
+    max-width: 600px;
+    position: relative;
+    z-index: 2;
+}
+
+.intro-text{
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    margin-bottom: -230px;
+
+    @media screen and (min-width: 1000px) {
+
+        margin-bottom: 136px;
+
+}
+
+
+    h1{
+        font-size: clamp(24px, 3vw, 30px);
+        font-weight: 700;
+        font-family: $rale;
+        line-height: 1.5;
+    }
+
+    p{
+        font-size: clamp(16px, 3vw, 20px);
+    }
+}
+
+
+@import './services';
+
+@import './fylo-works';
+
+@import './quotes';
+
+@import './subscribe';
+
+@import './footer';
+
+
+
+
+
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@import './override'
